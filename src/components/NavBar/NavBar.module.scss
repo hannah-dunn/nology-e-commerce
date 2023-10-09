@@ -8,6 +8,13 @@
 }
 
 .link {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  * {
+    margin: 0;
+    padding: 0;
+  }
   &:hover {
     color: grey;
   }

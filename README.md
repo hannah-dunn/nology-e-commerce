@@ -32,6 +32,20 @@ At a minimum your e-shop website should have two pages:
 
 Using Firestore and react create, a cart system. Create a cart page in your react app Add logic to prevent users from adding items to cart that are no longer in stock. You will have to check the current cart and the product quantity Cart page should have the following:
 
+totally new collection in firestorm with placeholder so it doesnt delete, filter it out
+firestore function to get all the products with filter
+function that adds products to cart
+check if the product is already in cart
+find it by name and variant
+check if its in cart, if it is increase by quantity
+if it isnt in card add new entry to the cart
+decrement the available quantity from product
+check if its in cart function that checks if true or false
+increment cart quantity
+call the check if in cart
+call last function with is decrement quantity
+can delete stuff too
+
 - List of products in cart
 
   - Ability to change quantity of products in cart

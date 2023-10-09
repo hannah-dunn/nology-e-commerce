@@ -1,0 +1,28 @@
+.Cart {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.border {
+  border: 2px black solid;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+  width: 80%;
+  height: auto;
+}

@@ -18,3 +18,10 @@ export const getBagById = async (id) => {
   }
   return { id: querySnapshot.id, ...querySnapshot.data() };
 };
+
+// experimenting with getting variants
+// export const getColourVariants = async (id) => {
+//   const collectionRef = collection(db, "bags/" + id + "/quantity");
+//   const querySnapshot = await getDocs(collectionRef);
+//   return querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+// };

@@ -25,6 +25,10 @@ const CarouselPage = () => {
         {/* <p className="legend">Legend 3</p> */}
       </div>
     </Carousel>
+
+    // make own carousel implementation
+    // setInterval to have it scroll
+    
   );
 };
 

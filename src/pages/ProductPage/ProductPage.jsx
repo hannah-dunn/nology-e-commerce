@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import React, { useEffect, useState, useContext } from "react";
+import { useParams } from "react-router-dom";
 import { getBagById } from "../../services/bags-database-service";
 import styles from "./ProductPage.module.scss";
+import { CartContext } from "../../context/CartContextProvider";
 
 const ProductPage = () => {
   const { id } = useParams();
   const [bags, setBags] = useState(null);
   const [error, setError] = useState(null);
+  const { cartItems, addToCart } = useContext(CartContext);
 
   useEffect(() => {
     getBagById(id)
@@ -22,9 +24,12 @@ const ProductPage = () => {
           <h2>
             {bags.style}, {bags.shape}
           </h2>
-          <p>{bags.quantity} in stock</p>
+
+          {/* need to update this now */}
+          {/* <p>{bags.quantity} in stock</p> */}
+
           <h2>${bags.cost}</h2>
-          <button>Add to cart</button>
+          <button onClick={() => addToCart(bags)}>Add to cart</button>
           <img src={bags.image} alt={bags.name} />
         </>
       )}
