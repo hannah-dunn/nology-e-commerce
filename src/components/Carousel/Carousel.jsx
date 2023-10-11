@@ -10,6 +10,9 @@ const CarouselPage = () => {
       interval="3000"
       axis="horizontal"
       infiniteLoop
+      showThumbs={false}
+      showStatus={false}
+      showArrows={false}
       className={styles.carousel}
     >
       <div className="carouselpics">
@@ -28,7 +31,6 @@ const CarouselPage = () => {
 
     // make own carousel implementation
     // setInterval to have it scroll
-    
   );
 };
 

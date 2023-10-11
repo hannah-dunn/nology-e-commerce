@@ -7,7 +7,7 @@ const ProductCard = ({ bags }) => {
       <img src={bags.image} alt={bags.name} />
       <h2>{bags.name}</h2>
       <h3>{bags.cost}</h3>
-      <Link to={bags.id}>See More</Link>
+      <Link to={bags.id}>Click Here To See More</Link>
     </div>
   );
 };

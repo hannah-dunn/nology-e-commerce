@@ -45,14 +45,14 @@ const CartContextProvider = ({ children }) => {
   };
 
   const clearCart = () => {
-    setCartItems([]); // set the cart items to an empty array
+    setCartItems([]);
   };
 
   const getCartTotal = () => {
     return cartItems.reduce(
-      (total, item) => total + item.price * item.quantity,
+      (total, item) => total + item.cost * item.quantity,
       0
-    ); // calculate the total price of the items in the cart
+    );
   };
 
   useEffect(() => {

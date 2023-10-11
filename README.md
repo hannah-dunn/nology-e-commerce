@@ -26,6 +26,7 @@ At a minimum your e-shop website should have two pages:
     - name
     - image url
     - favourited or not (boolean)
+    
       All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application
 
 ### Bonus

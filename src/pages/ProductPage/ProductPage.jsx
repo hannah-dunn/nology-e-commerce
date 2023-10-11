@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getBagById } from "../../services/bags-database-service";
 import styles from "./ProductPage.module.scss";
 import { CartContext } from "../../context/CartContextProvider";
+import Favourited from "../../components/Favourited/Favourited";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -21,15 +22,20 @@ const ProductPage = () => {
       {bags && (
         <>
           <h1>{bags.name}</h1>
-          <h2>
-            {bags.style}, {bags.shape}
-          </h2>
-
+          <h2>{bags.style}</h2>
+          <Favourited />
           {/* need to update this now */}
           {/* <p>{bags.quantity} in stock</p> */}
-
+          <p>{bags.favourited}</p>
           <h2>${bags.cost}</h2>
-          <button onClick={() => addToCart(bags)}>Add to cart</button>
+          <button
+            onClick={() => {
+              addToCart(bags);
+              alert("Added to cart");
+            }}
+          >
+            Add to cart
+          </button>
           <img src={bags.image} alt={bags.name} />
         </>
       )}
