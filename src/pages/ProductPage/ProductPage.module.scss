@@ -1,3 +1,13 @@
+.whole {
+  display: flex;
+
+  // & picture {
+  //   width: auto;
+  //   margin: auto;
+  //   background-color: aqua;
+  // }
+}
+
 .individual {
   display: flex;
   flex-direction: column;
@@ -5,10 +15,7 @@
   min-width: 400px;
   min-height: min-content;
   padding: 20px;
-  img {
-    width: 80%;
-    margin: auto;
-  }
+
   button {
     background: #fff;
     backface-visibility: hidden;
@@ -27,10 +34,5 @@
     padding: 0.875rem 1.125rem;
     position: relative;
     text-align: left;
-
-    button:hover {
-      color: grey;
-      // this hover dont work yet
-    }
   }
 }

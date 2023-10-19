@@ -28,7 +28,6 @@ const Cart = () => {
                 <div>
                   <h1>{bags.name}</h1>
                   <p>${bags.cost}</p>
-                  
                 </div>
               </div>
               <div>
