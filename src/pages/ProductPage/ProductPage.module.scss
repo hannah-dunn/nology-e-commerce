@@ -1,11 +1,12 @@
 .whole {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  // & picture {
-  //   width: auto;
-  //   margin: auto;
-  //   background-color: aqua;
-  // }
+.shrink {
+  display: flex;
+
+  border: solid 2px black;
 }
 
 .individual {

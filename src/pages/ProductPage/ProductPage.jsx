@@ -33,6 +33,7 @@ const ProductPage = () => {
             <h2>{bags.style}</h2>
             <p>{bags.favourited}</p>
             <h2>${bags.cost}</h2>
+            <img src={bags.image} alt={bags.name} />
             <button
               onClick={() => {
                 addToCart(bags);
@@ -41,16 +42,21 @@ const ProductPage = () => {
             >
               Add to cart
             </button>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Asperiores amet, deleniti error, repellat numquam vel, reiciendis
-              incidunt omnis adipisci natus ab quibusdam. Ut reprehenderit
-              repudiandae cumque architecto neque aspernatur odio.
-            </p>
+            <p>{bags.desc}</p>
+            <div>
+              <ul>
+                <li>
+                  <button></button>
+                </li>
+                <li>
+                  <button></button>
+                </li>
+              </ul>
+            </div>
           </div>
         )}
         {error && <p>Cannot find product with ID: {id}</p>}
-        <div className={styles.desc}>
+        <div className={styles.shrink}>
           <img src={bags.image} alt={bags.name} />
         </div>
       </div>
