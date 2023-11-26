@@ -65,8 +65,48 @@ can delete stuff too
 3. Plan for the future (how will you show this off if your firestore is no longer active)
    - Add detailed instructions on how to set up/add products in the readme
 
-## Useful links
+## Demo & Snippets
 
-- [React-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
-- [Dummy JSON](https://dummyjson.com/)
-- [Fake Store](https://fakestoreapi.com/)
+![shop](https://github.com/hannah-dunn/nology-e-shop/assets/114053793/c828b1c5-092a-43ea-8caf-3df1941b57df)
+
+![Screenshot (2943)](https://github.com/hannah-dunn/nology-e-shop/assets/114053793/47ccd034-d490-44cf-ab81-01027b2c234a)
+
+![Screenshot (2944)](https://github.com/hannah-dunn/nology-e-shop/assets/114053793/9d765359-0e2a-41c7-a012-63141a8a0fa9)
+
+---
+
+## Build Steps
+
+-   how to build / run project
+-   use proper code snippets if there are any commands to run
+
+---
+
+## Design Goals / Approach
+
+-   I followed a similar look I used in my first project with my portfolio, with the plain but bold title and black-on-white font
+-   I wanted bright photography to stand out on the plain page and used red for the 'sale' pitch alongside the carousel
+-   Again very minimalist, I wanted to focus on the features working and the layout of the website at least initially, rather than overcomplicate it
+
+---
+
+## Features
+
+-   Landing page with title, rotating carousel, and item catalog
+-   Each item/product links to their individual product page, with further details about the item
+-   Items are able to be added to a cart that calculates the total cost
+-   Routing to the cart, homepage, page not found and item pages
+
+---
+
+## Known issues
+
+-   I haven't fixed the quantity not adjusting properly when items are added
+
+---
+
+## Future Goals
+
+-   Have the quantity be responsive to change when items are added to the cart
+-   Have the different colours of the products be displayed on the home page and their individual product pages
+-   Spruce up the design, with possible fake advertisements and more colour
