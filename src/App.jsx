@@ -1,16 +1,30 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import LandingPage from "./pages/LandingPage/LandingPage";
+import HomePage from "./pages/HomePage/HomePage";
+import CartPage from "./pages/CartPage/CartPage";
+import NavBar from "./components/NavBar/NavBar";
+import BagContextProvider from "./context/BagContextProvider";
+import ProductPage from "./pages/ProductPage/ProductPage";
+import CartContextProvider from "./context/CartContextProvider";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="*" element={<NotFoundPage />} />
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-      </BrowserRouter>
+      <CartContextProvider>
+        <BagContextProvider>
+          <BrowserRouter>
+            <header>
+              <NavBar />
+            </header>
+            <Routes>
+              <Route path="*" element={<NotFoundPage />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/:id" element={<ProductPage />} />
+              <Route path="/cart" element={<CartPage />} />
+            </Routes>
+          </BrowserRouter>
+        </BagContextProvider>
+      </CartContextProvider>
     </>
   );
 }
